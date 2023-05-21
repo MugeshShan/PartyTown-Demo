@@ -1,6 +1,7 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
+import { Partytown } from '@builder.io/partytown/react';
 
 function App() {
   return (
@@ -19,6 +20,9 @@ function App() {
           Learn React
         </a>
       </header>
+
+      <Partytown debug={true} forward={['dataLayer.push']} />
+      <script type="text/partytown" src="https://www.googletagmanager.com/gtag/js?id=G-K1GDE14Q5F"></script>
     </div>
   );
 }
